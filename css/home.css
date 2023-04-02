@@ -1,0 +1,116 @@
+#home {
+  padding-top: 100px;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.home-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.home-left h1 {
+  font-family: Rubik500;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0b132a;
+}
+
+.home-left p {
+  margin-top: 20px;
+  font-family: Rubik400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+}
+.home-left a {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 17.5px 77.5px;
+  font-family: Rubik700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+  background: #f53838;
+  border-radius: 10px;
+}
+
+.home-left a:hover {
+  background-color: #d20000;
+}
+.home-bottom {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 67px 91px;
+  box-shadow: 1px 1px 20px 20px rgba(127, 126, 126, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.home-bottom-card {
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 37px;
+}
+.home-bottom-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.home-bottom-card-content h1 {
+  font-family: Rubik700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #0b132a;
+}
+.home-bottom-card-content span {
+  font-family: Rubik400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+@media (max-width: 1180px) {
+  br {
+    display: none;
+  }
+  .home-top {
+    align-items: center;
+  }
+  .home-right img {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .home-top {
+    flex-direction: column;
+  }
+  .home-left {
+    text-align: center;
+  }
+  .home-bottom {
+    flex-direction: column;
+    box-shadow: none;
+    gap: 50px;
+    padding: 0;
+  }
+  .home-bottom-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 70px;
+    width: 100%;
+    box-shadow: 1px 1px 20px 20px rgba(127, 126, 126, 0.1);
+    border-radius: 10px;
+  }
+  .home-bottom-card-content {
+    text-align: center;
+  }
+}

@@ -1,0 +1,101 @@
+#carousel {
+  padding-bottom: 100px;
+}
+.carousel-container {
+  max-width: 1400px;
+}
+.carousel-heading {
+  margin-bottom: 60px;
+}
+.carousel-heading h1 {
+  font-family: Rubik500;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: #0b132a;
+}
+.carousel-heading p {
+  margin-top: 20px;
+  font-family: Rubik400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #4f5665;
+}
+.owl-carousel{
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  }
+.karusel-card {
+  margin: auto;
+  height: 230px;
+  padding: 30px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+}
+.karusel-card:hover {
+  transition: 0.3s;
+  border: 2px solid #F53838;
+}
+.karusel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.karusel-top-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.karusel-top-profile img {
+  width: 50px !important;
+}
+.profile-title h4 {
+  font-family: Rubik500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0b132a;
+}
+.profile-title span {
+  font-family: Rubik400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4f5665;
+}
+.karusel-top-star {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.karusel-top-star span {
+  font-family: Rubik400;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #0b132a;
+}
+.karusel-top-star img {
+  margin-top: -5px;
+}
+.karusel-content {
+  margin-top: 20px;
+}
+.karusel-content p {
+  font-family: Rubik400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+@media (min-width:400px) {
+  .karusel-card {
+    width: 100%;
+  }
+}
+@media (min-width:1000px) {
+  .karusel-card {
+    width: 410px;
+  }
+}

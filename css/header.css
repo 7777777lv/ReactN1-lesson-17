@@ -1,0 +1,279 @@
+#header {
+  background: var(--light);
+  height: 120px;
+}
+.header-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-left-logo h4 {
+  font-family: Rubik400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0b132a;
+}
+
+.header-left-logo h4 span {
+  font-family: Rubik700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0b132a;
+}
+.header-ul {
+  display: flex;
+  gap: 45px;
+}
+.nav-link:hover .dropdown-content-home {
+  display: block;
+}
+.nav-link:hover .dropdown-content-features {
+  display: block;
+}
+.nav-link:hover .dropdown-content-pricing {
+  display: block;
+}
+.nav-link:hover .dropdown-content-testimonials {
+  display: block;
+}
+.nav-link:hover .dropdown-content-help {
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+  font-family: Rubik400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4f5665;
+}
+.nav-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  border-radius: 10px;
+  background-color: #f53855;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+.nav-item:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* --- dropdown start --- */
+
+.dropdown {
+  position: relative;
+}
+.dropdown-content-home {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 160px;
+  background-color: #cecece;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.dropdown-content-features {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 165px;
+  background-color: #cecece;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.dropdown-content-pricing {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 195px;
+  background-color: #cecece;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.dropdown-content-testimonials {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 175px;
+  background-color: #cecece;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.dropdown-content-help {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 155px;
+  background-color: #cecece;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.dropdown ul {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.dropdown-content-home a {
+  font-family: Rubik500;
+  font-size: 17px;
+  line-height: 19px;
+  color: #000000;
+  transition: 0.3s;
+}
+.dropdown-content-features a {
+  font-family: Rubik500;
+  font-size: 17px;
+  line-height: 19px;
+  color: #000000;
+  transition: 0.3s
+}
+.dropdown-content-pricing a {
+  font-family: Rubik500;
+  font-size: 17px;
+  line-height: 19px;
+  color: #000000;
+  transition: 0.3s
+}
+.dropdown-content-testimonials a{
+  font-family: Rubik500;
+  font-size: 17px;
+  line-height: 19px;
+  color: #000000;
+  transition: 0.3s
+}
+.dropdown-content-help a {
+  font-family: Rubik500;
+  font-size: 17px;
+  line-height: 19px;
+  color: #000000;
+  transition: 0.3s
+}
+.dropdown-content-home a:hover {
+  padding: 0 10px;
+  border: 2px solid #f53855;
+  border-radius: 10px;
+}
+.dropdown-content-features a:hover {
+  padding: 0 10px;
+  border: 2px solid #f53855;
+  border-radius: 10px;
+}
+.dropdown-content-pricing a:hover {
+  padding: 0 10px;
+  border: 2px solid #f53855;
+  border-radius: 10px;
+}
+.dropdown-content-testimonials a:hover {
+  padding: 0 10px;
+  border: 2px solid #f53855;
+  border-radius: 10px;
+}
+.dropdown-content-help a:hover {
+  padding: 0 10px;
+  border: 2px solid #f53855;
+  border-radius: 10px;
+}
+
+/* --- dropdown end --- */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.signin {
+  font-family: Rubik500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0b132a;
+}
+.signup {
+  padding: 13px 45px;
+  border: 1px solid #f53855;
+  border-radius: 50px;
+  font-family: Rubik500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f53855;
+  transition: 0.5s;
+}
+.signup:hover {
+  color: white;
+  background: #f53855;
+}
+
+.header-right button {
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+@media (min-width:400px) {
+  .header-nav {
+    display: none;
+  }
+}
+.header-right button {
+  display: block;
+}
+.header-right {
+  gap: 15px;
+}
+.signup, .signin {
+  font-size: 14px;
+}
+.signup {
+  padding: 7px 15px;
+}
+@media (min-width:600px) {
+  .signin {
+    font-family: Rubik500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0b132a;
+  }
+  .signup {
+    padding: 13px 45px;
+    border: 1px solid #f53855;
+    border-radius: 50px;
+    font-family: Rubik500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f53855;
+    transition: 0.5s;
+  }
+}
+@media (min-width:1010px) {
+  .header-nav {
+    display: block;
+  }
+  .header-right button {
+    display: none;
+  }
+  .header-right {
+    gap: 30px;
+  }
+}
+

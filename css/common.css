@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Rubik400;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rubik500;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: Rubik700;
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --maxWidth:1180px;
+}
+
+.container {
+    max-width: var(--maxWidth);
+    padding: 0 20px;
+    margin: 0 auto;
+}

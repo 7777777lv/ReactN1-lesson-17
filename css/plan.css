@@ -1,0 +1,126 @@
+.plan-container {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.plan-heading {
+  text-align: center;
+}
+.plan-heading h1 {
+  margin-bottom: 20px;
+  font-family: Rubik500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0b132a;
+}
+
+.plan-heading p {
+  font-family: Rubik400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #4f5665;
+}
+
+.plan-card-block {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 50px;
+}
+.plan-card {
+  padding: 80px 70px 50px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+}
+.plan-card:hover {
+  transition: 0.3s;
+  border: 2px solid #f53838;
+}
+.plan-card-img img {
+  height: 165px;
+}
+.plan-card-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plan-card-content span {
+  font-family: Rubik500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #0b132a;
+}
+
+.plan-card-content ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.plan-card-content li img {
+  margin-right: 20px;
+}
+.plan-card-content li a {
+  font-family: Rubik400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4f5665;
+}
+.plan-card-bottom {
+  margin-top: 130px;
+}
+.plan-card-bottom2 {
+  margin-top: 90px;
+}
+.plan-card-bottom3 {
+  margin-top: 50px;
+}
+.plan-card-bottom h3 {
+  font-family: Rubik500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #0b132a;
+}
+
+.plan-card-bottom a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 62px;
+  font-family: Rubik700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f53838;
+  border: 2px solid #f53838;
+  border-radius: 50px;
+}
+
+.plan-card-bottom a:hover {
+  transition: 0.3s;
+  background-color: #f53838;
+  color: white;
+}
+
+@media (min-width: 400px) {
+  .plan-card-block {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+}
+
+@media (min-width:800px) {
+    .plan-card-block {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (min-width: 1130px) {
+  .plan-card-block {
+    grid-template-columns: repeat(3, auto);
+    grid-row-gap: 50px;
+  }
+}
